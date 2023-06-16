@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-h {
+  min-height: calc(100vh - 73px);
+}
+
+.card1 {
+  width: 260px;
+  height: 390px;
+  /* 376 */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 10px;
+  border: 1px solid #d8d8d8;
+}
+
+.card2 {
+  width: 290px;
+  height: 420px;
+  /* 400 */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 10px;
+  margin-inline: auto;
+}
+
+.instructors {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(290px, 100%), 1fr));
+  justify-items: center;
+}
+
+.menu .active {
+  background: #1d232b;
+}
